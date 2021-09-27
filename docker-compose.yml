@@ -1,0 +1,15 @@
+version: '3'
+services:
+  database:
+    image: 'postgres'
+    ports:
+      - '54321:5432'
+    environment:
+      - POSTGRES_USER=example
+      - POSTGRES_PASSWORD=example
+      - POSTGRES_DB=example
+    volumes:
+      - prisma-integration-test-example:/var/lib/postgresql/data/
+
+volumes:
+  prisma-integration-test-example:
