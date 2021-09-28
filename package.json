@@ -19,7 +19,8 @@
   },
   "scripts": {
     "dev": "DATABASE_URL=\"postgresql://example:example@localhost:54321/example\" ts-node ./src/index.ts",
-    "test": "DATABASE_URL=\"postgresql://example:example@localhost:54321/example\" jest"
+    "test": "DATABASE_URL=\"postgresql://example:example@localhost:54321/example\" jest",
+    "ci:test": "jest"
   },
   "dependencies": {
     "@prisma/client": "3.1.1",
