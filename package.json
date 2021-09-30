@@ -2,8 +2,8 @@
   "name": "script",
   "license": "MIT",
   "scripts": {
-    "dev": "DATABASE_URL=\"postgresql://example:example@localhost:54321/example\" ts-node ./src/index.ts",
-    "test": "DATABASE_URL=\"postgresql://example:example@localhost:54321/example\" jest",
+    "dev": "ts-node ./src/index.ts",
+    "test": "jest",
     "ci:test": "jest"
   },
   "dependencies": {
